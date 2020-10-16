@@ -15,16 +15,17 @@ public class Collaborator {
     private String email;
     private String firstName;
     private String lastName;
-
+    private Long projectId;
 
     public Collaborator() {
     }
 
-    public Collaborator(String cin, String email, String firstName, String lastName) {
+    public Collaborator(String cin, String email, String firstName, String lastName, Long projectId) {
         this.cin = cin;
         this.email = email;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.projectId = projectId;
     }
 
     public Long getId() {
@@ -45,5 +46,9 @@ public class Collaborator {
 
     public String getLastName() {
         return lastName;
+    }
+
+    public Long getProjectId() {
+        return projectId;
     }
 }

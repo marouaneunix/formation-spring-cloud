@@ -13,4 +13,6 @@ public interface CollaboratorRepository extends JpaRepository<Collaborator, Long
 
     @Query("select c from Collaborator c where c.firstName like %:firstName%")
     List<Collaborator> findByFirstNameQuery(@Param("firstName") String firstName);
+
+    List<Collaborator> findByProjectId(Long projectId);
 }

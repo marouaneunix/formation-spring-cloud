@@ -7,7 +7,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import java.util.List;
 import java.util.stream.Stream;
+
+import static java.util.Arrays.asList;
 
 @SpringBootApplication
 public class CollaboratorApplication {
@@ -20,8 +23,11 @@ public class CollaboratorApplication {
 	CommandLineRunner commandLineRunner(CollaboratorRepository repository) {
 		return strings -> {
 
-			Stream.of("marouane", "khaoula", "chaima", "ayoub", "yassine")
-					.forEach(name -> repository.save(new Collaborator("cin_" + name, name + "@gmail.com", name, "last " + name)));
+			List<String> collabs = asList("marouane", "khaoula", "chaima", "ayoub", "yassine");
+			for (int i = 0; i < collabs.size(); i++) {
+				String name = collabs.get(i);
+				repository.save(new Collaborator("cin_" + name, name + "@gmail.com", name, "last " + name, (i%2 == 1) ? 1L : 2L ));
+			}
 		};
 	}
 }

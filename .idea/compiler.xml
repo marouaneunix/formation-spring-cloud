@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="client" />
         <module name="collaborator" />
+        <module name="project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="client" target="11" />
       <module name="collaborator" target="11" />
+      <module name="project" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -9,6 +9,7 @@ public class CollaboratorDTO {
     public String email;
     public String firstName;
     public String lastName;
+    public Long projectId;
 
     public CollaboratorDTO(Collaborator collaborator) {
         this.collaboratorId = collaborator.getId();
@@ -16,5 +17,6 @@ public class CollaboratorDTO {
         this.email = collaborator.getEmail();
         this.firstName = collaborator.getFirstName();
         this.lastName = collaborator.getLastName();
+        this.projectId = collaborator.getProjectId();
     }
 }

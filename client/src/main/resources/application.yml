@@ -1,2 +1,10 @@
 server:
   port: 8081
+
+client:
+  collaborator:
+    name: api-collaborator
+    url: http://localhost:8080
+  project:
+    name: api-project
+    url: http://localhost:8082
