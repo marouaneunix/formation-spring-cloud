@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: ${springboot.app.name:api-registry}
+server:
+  port: ${server-port:8761}
+
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${registry.host:localhost}:${server.port}/eureka

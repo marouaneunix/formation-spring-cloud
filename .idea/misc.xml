@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/collaborator/pom.xml" />
         <option value="$PROJECT_DIR$/client/pom.xml" />
         <option value="$PROJECT_DIR$/project/pom.xml" />
+        <option value="$PROJECT_DIR$/registry/pom.xml" />
       </list>
     </option>
   </component>

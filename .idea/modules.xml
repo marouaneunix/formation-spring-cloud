@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/collaborator/collaborator.iml" filepath="$PROJECT_DIR$/collaborator/collaborator.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/formation-spring-cloud.iml" filepath="$PROJECT_DIR$/.idea/formation-spring-cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/project/project.iml" filepath="$PROJECT_DIR$/project/project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/registry/registry.iml" filepath="$PROJECT_DIR$/registry/registry.iml" />
     </modules>
   </component>
 </project>
