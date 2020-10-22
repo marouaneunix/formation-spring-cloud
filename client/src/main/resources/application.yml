@@ -4,10 +4,24 @@ server:
 client:
   collaborator:
     name: api-collaborator
-    url: http://localhost:8080
+
   project:
     name: api-project
-    url: http://localhost:8082
+
 feign:
   hystrix:
     enabled: true
+
+spring:
+  application:
+    name: api-client
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${registry.host:localhost}:${registry.port:8761}/eureka
+    healthcheck:
+      enabled: true
+  instance:
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2

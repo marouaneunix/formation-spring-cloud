@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
-@FeignClient(name = "${client.collaborator.name}", url = "${client.collaborator.url}", fallbackFactory = CollaboratorFallbackFactory.class)
+@FeignClient(name = "${client.collaborator.name}", fallbackFactory = CollaboratorFallbackFactory.class)
 public interface CollaboratorClient {
 
     @GetMapping("/collaborators")

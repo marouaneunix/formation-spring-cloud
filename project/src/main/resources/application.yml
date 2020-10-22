@@ -4,3 +4,13 @@ server:
 spring:
   application:
     name: api-project
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${registry.host:localhost}:${registry.port:8761}/eureka
+    healthcheck:
+      enabled: true
+  instance:
+    lease-renewal-interval-in-seconds: 1
+    lease-expiration-duration-in-seconds: 2

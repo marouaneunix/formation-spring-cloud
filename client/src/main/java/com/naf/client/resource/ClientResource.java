@@ -3,10 +3,7 @@ package com.naf.client.resource;
 import com.naf.client.openclient.CollaboratorClient;
 import com.naf.client.openclient.ProjectClient;
 import com.naf.client.openclient.ProjectDTO;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
