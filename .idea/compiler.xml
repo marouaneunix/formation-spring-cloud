@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="client" />
         <module name="collaborator" />
+        <module name="config-server" />
         <module name="project" />
         <module name="registry" />
       </profile>
@@ -15,6 +16,7 @@
     <bytecodeTargetLevel>
       <module name="client" target="11" />
       <module name="collaborator" target="11" />
+      <module name="config-server" target="11" />
       <module name="project" target="11" />
       <module name="registry" target="11" />
     </bytecodeTargetLevel>
